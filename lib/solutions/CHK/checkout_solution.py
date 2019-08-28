@@ -5,7 +5,7 @@ def checkout(skus):
     checkout_value = 0
     dictionary_of_costs = {"A": 50, "B": 30, "C": 20, "D": 15, "E" : 40}
     dictionary_of_deals_costs = {"A": 130, "B": 45}
-    dictionary_of_deals = {"A": [3,5], "B": 2, "E" : 2}
+    dictionary_of_deals = {"A": 3, "B": 2, "E" : 2}
     dictionary_of_special_offers = {"E": "B"}
     list_of_items = list(skus)
     cnt_of_items = Counter(list_of_items)
@@ -25,7 +25,3 @@ def checkout(skus):
             checkout_value += dictionary_of_costs[item] * cnt_of_items[item]
 
     return int(checkout_value)
-
-
-
-
