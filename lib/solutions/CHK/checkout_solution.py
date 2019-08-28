@@ -14,6 +14,7 @@ def checkout(skus):
         if item in dictionary_of_deals:
             if item in dictionary_of_special_offers and cnt_of_items[item] % dictionary_of_deals[item] == 0:
                 divisible = cnt_of_items[item] // dictionary_of_deals[item] # no remainder
+                checkout_value += dictionary_of_costs[item] * cnt_of_items[item]
                 checkout_value -= divisible * dictionary_of_costs[dictionary_of_special_offers[item]]
             else:
                 diff = cnt_of_items[item] % dictionary_of_deals[item] # the diff using modulo
@@ -25,3 +26,4 @@ def checkout(skus):
             checkout_value += dictionary_of_costs[item] * cnt_of_items[item]
 
     return int(checkout_value)
+
