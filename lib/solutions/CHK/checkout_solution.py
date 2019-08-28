@@ -20,6 +20,3 @@ def checkout(skus):
             checkout_value += dictionary_of_costs[item] * cnt_of_items[item]
 
     return int(checkout_value)
-
-
-
