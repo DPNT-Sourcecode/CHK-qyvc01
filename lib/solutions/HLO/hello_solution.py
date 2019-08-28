@@ -1,5 +1,7 @@
 
 def hello(friend_name):
-    return "Hello, World!"
+    helloFriend = "Hello, " + friend_name + "!"
+    return helloFriend
+
 
 
