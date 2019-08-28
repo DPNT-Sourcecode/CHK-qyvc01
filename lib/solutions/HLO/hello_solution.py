@@ -1,4 +1,5 @@
 
 def hello(friend_name):
-    print("Hello World")
+    return "Hello, World!"
+
 
