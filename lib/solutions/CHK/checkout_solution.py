@@ -1,3 +1,5 @@
 def checkout(skus):
-    raise NotImplementedError()
+    listOfItems = list(skus)
+    cntOfItems = Counter(listOfItems)
+
 
