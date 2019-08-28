@@ -1,18 +1,21 @@
 from collections import Counter
 
 def checkout(skus):
-    checkoutValue = 0
-    dictionaryOfCosts = {"A": 50, "B": 30, "C": 20, "D": 15}
-    dictionaryOfDealsCosts = {"A": 130, "B": 45}
-    dictionaryOfDeals = {"A": 3, "B": 2}
 
-    listOfItems = list(skus)
-    cntOfItems = Counter(listOfItems)
+    standardised_skus = skus.upper()
+    checkout_value = 0
+    dictionary_of_costs = {"A": 50, "B": 30, "C": 20, "D": 15}
+    dictionary_of_deals_costs = {"A": 130, "B": 45}
+    dictionary_of_deals = {"A": 3, "B": 2}
 
-    for item in cntOfItems:
-        if (item in dictionaryOfDeals) and (cntOfItems[item] % dictionaryOfDeals[item] == 0):
-            checkoutValue += dictionaryOfDealsCosts[item] * (cntOfItems[item] / dictionaryOfDeals[item])
+    list_of_items = list(standardised_skus)
+    cnt_of_items = Counter(list_of_items)
+
+    for item in cnt_of_items:
+        if (item in dictionary_of_deals) and (cnt_of_items[item] % dictionary_of_deals[item] == 0):
+            checkout_value += dictionary_of_deals_costs[item] * (cnt_of_items[item] / dictionary_of_deals[item])
         else:
-            checkoutValue += dictionaryOfCosts[item] * cntOfItems[item]
+            checkout_value += dictionary_of_costs[item] * cnt_of_items[item]
 
-    return int(checkoutValue)
+    return int(checkout_value)
+
