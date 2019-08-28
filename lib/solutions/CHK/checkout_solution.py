@@ -15,7 +15,8 @@ def checkout(skus):
         else:
             checkoutValue += dictionaryOfCosts[item] * cntOfItems[item]
 
-    return checkoutValue
+    return int(checkoutValue)
+
 
 
 
