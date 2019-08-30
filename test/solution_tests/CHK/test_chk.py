@@ -21,3 +21,10 @@ class TestCHK():
 
     def test_chk_f(self):
         assert checkout_solution.checkout("F") == 10
+
+    def test_chk_h5(self):
+        assert checkout_solution.checkout("HHHHH") == 45
+
+    def test_chk_h5(self):
+        assert checkout_solution.checkout("HHHHHHHHHHHHHHH") == 125
+
