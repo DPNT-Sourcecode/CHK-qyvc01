@@ -9,7 +9,7 @@ def checkout(skus):
     list_of_items = list(skus)
     counter_of_items = Counter(list_of_items)
 
-    dict_of_deals = {"A": {1 : 50, 3 : 130, 5: 200}, "B": {1 : 30, 2: 45}, "C": {1: 20}, "D": {1: 15}, "E" : {1: 40}}
+    dict_of_deals = {"A": {1 : 50, 3 : 130, 5: 200}, "B": {1 : 30, 2: 45}, "C": {1: 20}, "D": {1: 15}, "E" : {1: 40}, "F" : {1: 10}}
     dict_of_bogof = {"E": {2: "B"}}
 
 
@@ -19,3 +19,4 @@ def checkout(skus):
         return checkout_values(counter_of_items, dict_of_deals)
     else:
         return -1
+
