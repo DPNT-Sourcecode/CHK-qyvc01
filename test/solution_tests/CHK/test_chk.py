@@ -9,4 +9,3 @@ class TestCHK():
 
     def test_chk_a3(self):
         assert checkout_solution.checkout("AAA") == 130
-

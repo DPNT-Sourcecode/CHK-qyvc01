@@ -27,3 +27,6 @@ def checkout(skus):
 
     return int(checkout_value)
 
+def bogof(letter):
+    dictionary_of_bogof = {"E" : "B"}
+    dictionary_of_costs
