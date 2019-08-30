@@ -19,10 +19,11 @@ def checkout_values(counter_of_items, dict_of_deals):
                 if num > 0:
                     result.append(max(list_of_items))
                 if num < 0:
-                    n += max(list_of_items)
+                    num += max(list_of_items)
                     list_of_items.pop(list_of_items.index(max(list_of_items)))
 
-        for x in ans:
+        for x in result:
             value += dict_of_deals[item][x]
 
         return value
+
