@@ -13,4 +13,8 @@ class TestCHK():
     def test_chk_e2(self):
         assert checkout_solution.checkout("AAAEEB") == 210
 
+    def test_chk_alpha(self):
+        assert checkout_solution.checkout("AAAEeB") == -1
 
+    def test_chk_char(self):
+        assert checkout_solution.checkout("&") == -1

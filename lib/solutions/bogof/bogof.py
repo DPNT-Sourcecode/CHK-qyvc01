@@ -10,5 +10,3 @@ def bogof(counter_of_items, dict_of_bogof, dict_of_deals):
     counter_of_items = +counter_of_items
 
     return counter_of_items
-
-
