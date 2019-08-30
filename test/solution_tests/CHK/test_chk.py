@@ -20,5 +20,6 @@ class TestCHK():
         assert checkout_solution.checkout("&") == -1
 
     def test_chk_f(self):
-        assert checkout_solution.checkout("AAAAAFFFFFF") == 240
+        assert checkout_solution.checkout("F") == 10
+
 
