@@ -1,14 +1,20 @@
 from collections import Counter
+from bogof.bogof import bogof
+from sum_of_checkout.sum import checkout_values
+from valid_items.validate import check_if_values
+
+
+
 
 def checkout(skus):
 
-    checkout_value = 0
-    dictionary_of_costs = {"A": 50, "B": 30, "C": 20, "D": 15, "E" : 40}
-    dictionary_of_deals_costs = {"A": 130, "B": 45}
-    dictionary_of_deals = {"A": 3, "B": 2, "E" : 2}
-    dictionary_of_special_offers = {"E": "B"}
     list_of_items = list(skus)
-    cnt_of_items = Counter(list_of_items)
+    counter_of_items = Counter(list_of_items)
+    
+    dict_of_deals = {"A": {1 : 50, 3 : 130, 5: 200}, "B": {1 : 30, 2: 45}, "C": {1: 20}, "D": {1: 15}, "E" : {1: 40}}
+    dict_of_bogof = {"E": {2: "B"}}
+
+
 
     for item in cnt_of_items:
         if item in dictionary_of_deals:
@@ -30,3 +36,4 @@ def checkout(skus):
 def bogof(letter):
     dictionary_of_bogof = {"E" : "B"}
     dictionary_of_costs
+
