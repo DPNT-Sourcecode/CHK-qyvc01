@@ -21,5 +21,3 @@ class TestCHK():
 
     def test_chk_f(self):
         assert checkout_solution.checkout("F") == 10
-
-
