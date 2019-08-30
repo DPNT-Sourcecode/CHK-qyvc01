@@ -25,6 +25,23 @@ class TestCHK():
     def test_chk_h5(self):
         assert checkout_solution.checkout("HHHHH") == 45
 
-    def test_chk_h5(self):
+    def test_chk_h15(self):
         assert checkout_solution.checkout("HHHHHHHHHHHHHHH") == 125
+
+    def test_chk_k2(self):
+        assert checkout_solution.checkout("KK") == 150
+
+    def test_chk_nbogof(self):
+        assert checkout_solution.checkout("NNNM") == 120
+
+    def test_chk_p5(self):
+        assert checkout_solution.checkout("PPPPP") == 200
+
+
+    def test_chk_q3(self):
+        assert checkout_solution.checkout("QQQ") == 80
+
+    def test_chk_rbogof(self):
+        assert checkout_solution.checkout("RRRQQ") == 180
+
 
