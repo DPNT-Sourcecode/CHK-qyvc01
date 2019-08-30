@@ -5,7 +5,11 @@ class TestCHK():
         assert checkout_solution.checkout("ABCEEE") == 220
 
     def test_chk_a5(self):
-        assert checkout_solution.checkout("AAAAAA") == 200
+        assert checkout_solution.checkout("AAAAAAA") == 250
 
     def test_chk_a3(self):
-        assert checkout_solution.checkout("AAA") == 130
+        assert checkout_solution.checkout("AAAA") == 180
+
+    def test_chk_e2(self):
+        assert checkout_solution.checkout("AAAEEB") == 210
+
