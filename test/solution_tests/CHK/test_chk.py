@@ -44,4 +44,20 @@ class TestCHK():
     def test_chk_rbogof(self):
         assert checkout_solution.checkout("RRRQQ") == 180
 
+    def test_chk_u3(self):
+        assert checkout_solution.checkout("UUU") == 120
+
+    def test_chk_u4(self):
+        assert checkout_solution.checkout("UUUU") == 120
+
+    def test_chk_u8(self):
+        assert checkout_solution.checkout("UUUUUUUU") == 240
+
+    def test_chk_v2(self):
+        assert checkout_solution.checkout("VV") == 90
+
+    def test_chk_v3(self):
+        assert checkout_solution.checkout("VVV") == 130
+
+
 
