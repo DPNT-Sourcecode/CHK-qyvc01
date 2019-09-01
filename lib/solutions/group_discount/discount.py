@@ -9,7 +9,7 @@ def discount(counter_of_items, dict_of_deals):
             if item in list_of_group:
                 groups[item] = counter_of_items[item]
 
-        while len(groups) > 3:
+        while sum(groups.values()) & len(groups) > 3:
             #find combinations
             combin_found_groups = list(itertools.combinations(groups, 3))
 
@@ -35,3 +35,4 @@ def discount(counter_of_items, dict_of_deals):
 
 
         return [value_of_discount, counter_of_items]
+
