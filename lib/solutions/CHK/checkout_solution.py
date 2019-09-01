@@ -2,6 +2,7 @@ from collections import Counter
 from solutions.bogof.bogof import bogof
 from solutions.sum_of_checkout.sum import checkout_values
 from solutions.valid_items.validate import check_if_values
+from solutions.group_discount.discount import discount
 
 
 def checkout(skus):
@@ -23,6 +24,7 @@ def checkout(skus):
         return checkout_values(counter_of_items, dict_of_deals)
     else:
         return -1
+
 
 
 
