@@ -41,6 +41,3 @@ def discount(counter_of_items, dict_of_deals):
   counter_of_items = +counter_of_items
 
   return [value_of_discount, counter_of_items]
-
-
-

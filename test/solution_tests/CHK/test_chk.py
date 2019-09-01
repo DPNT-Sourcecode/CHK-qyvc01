@@ -61,5 +61,3 @@ class TestCHK():
 
     def test_chk_group(self):
         assert checkout_solution.checkout("SSSZ") == 65
-
-
