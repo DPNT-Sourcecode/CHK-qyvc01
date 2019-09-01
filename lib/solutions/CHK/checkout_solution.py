@@ -20,9 +20,10 @@ def checkout(skus):
 
     if check_if_values(counter_of_items, dict_of_deals):
         counter_of_items = bogof(counter_of_items, dict_of_bogof, dict_of_deals)
-        counter_of = 
+        counter_of = discount(counter_of_items, dict_of_deals)
 
-        return checkout_values(counter_of_items, dict_of_deals)
+        return checkout_values(counter_of[1], dict_of_deals) + counter_of[0]
     else:
         return -1
+
 

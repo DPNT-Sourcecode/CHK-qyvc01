@@ -22,7 +22,7 @@ def discount(counter_of_items, dict_of_deals):
             list_of_prices = []
             for value in item:
                 list_of_prices.append(dict_of_deals[value][1])
-            list_of_tuple_prices.append(list_of_price)
+            list_of_tuple_prices.append(list_of_prices)
 
         compre = [sum(x) for x in list_of_tuple_prices]
         index_of_max = compre.index(max(compre))
@@ -38,4 +38,5 @@ def discount(counter_of_items, dict_of_deals):
     counter_of_items = +counter_of_items
 
 ##
-    return value_of_discount, counter_of_items
+    return [value_of_discount, counter_of_items]
+
