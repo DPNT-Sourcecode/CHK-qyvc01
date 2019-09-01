@@ -29,7 +29,7 @@ class TestCHK():
         assert checkout_solution.checkout("HHHHHHHHHHHHHHH") == 125
 
     def test_chk_k2(self):
-        assert checkout_solution.checkout("KK") == 150
+        assert checkout_solution.checkout("KK") == 120
 
     def test_chk_nbogof(self):
         assert checkout_solution.checkout("NNNM") == 120
@@ -61,6 +61,7 @@ class TestCHK():
 
 
     def test_chk_group(self):
-        assert checkout_solution.checkout("ZZZ") == 150
+        assert checkout_solution.checkout("XXXZZZS") == 121
+
 
 
