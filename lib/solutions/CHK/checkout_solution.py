@@ -23,4 +23,3 @@ def checkout(skus):
         return checkout_values(counter_of_items, dict_of_deals)
     else:
         return -1
-
