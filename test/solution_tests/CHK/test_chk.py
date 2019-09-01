@@ -59,6 +59,10 @@ class TestCHK():
     def test_chk_v3(self):
         assert checkout_solution.checkout("VVV") == 130
 
+        def test_chk_v3(self):
+            assert checkout_solution.checkout("XXXZZZS") == 121
+
+
 
 
 
