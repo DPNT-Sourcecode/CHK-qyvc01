@@ -12,12 +12,18 @@ def discount(counter_of_items, dict_of_deals):
     if item in list_of_group:
       groups[item] = counter_of_items[item]
 
-      list_for_combin = []
-      for item in groups:
-          for i in range(groups[item]):
-              list_for_combin.append(item)
+
 
   while sum(groups.values()) >= 3:
+
+    for groups_item in groups:
+        if groups[groups_item] == 0:
+            continue
+        else:
+            list_for_combin = []
+            for item in groups:
+                for i in range(groups[item]):
+                    list_for_combin.append(item)
 
     # find all possible combinations
     combin_found_groups = list(itertools.combinations(list_for_combin, 3))
@@ -46,4 +52,5 @@ def discount(counter_of_items, dict_of_deals):
   counter_of_items = +counter_of_items
 
   return [value_of_discount, counter_of_items]
+
 
